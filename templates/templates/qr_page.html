@@ -1,1 +1,19 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your QR Code</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; margin-top: 50px; background: #fafafa; }
+    img { width: 250px; border-radius: 8px; box-shadow: 0 0 10px #aaa; }
+    a { display: block; margin-top: 20px; color: #007bff; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <h1>Scan to Download 📲</h1>
+  <img src="/{{ qr_path }}" alt="QR Code">
+  <a href="/download/{{ filename }}">Or click here to download</a>
+  <br>
+  <a href="/gallery">Back to Gallery</a>
+</body>
+</html>
